@@ -8,14 +8,66 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,306</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">154,070</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">test_suite.LoginAsDeveOpsAdmin</td><td><a href="#m0">Groups</a></td><td rowspan="1">1595232221856</td><td rowspan="1">2730</td></tr><tr class="passedeven"><td><a href="#m1">LoginToCMP</a></td><td rowspan="1">1595232208897</td><td rowspan="1">6374</td></tr><tr class="passedeven"><td><a href="#m2">Servers</a></td><td rowspan="1">1595232215287</td><td rowspan="1">3204</td></tr><tr class="passedeven"><td><a href="#m3">Services</a></td><td rowspan="1">1595232218494</td><td rowspan="1">3360</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test_suite.LoginAsDeveOpsAdmin</td><td><a href="#m0">Services</a></td><td rowspan="1">1595343618029</td><td rowspan="1">3149</td></tr><tr class="failedodd"><td rowspan="1">test_suite.NewTest</td><td><a href="#m1">Groups</a></td><td rowspan="1">1595343655645</td><td rowspan="1">4568</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">test_suite.LoginAsDeveOpsAdmin</td><td><a href="#m2">Groups</a></td><td rowspan="1">1595343621194</td><td rowspan="1">6104</td></tr><tr class="passedeven"><td><a href="#m3">LoginToCMP</a></td><td rowspan="1">1595343606022</td><td rowspan="1">8152</td></tr><tr class="passedeven"><td><a href="#m4">Servers</a></td><td rowspan="1">1595343614189</td><td rowspan="1">3836</td></tr><tr class="passedodd"><td rowspan="4">test_suite.LoginAsDeveloper</td><td><a href="#m5">Groups</a></td><td rowspan="1">1595343603571</td><td rowspan="1">2447</td></tr><tr class="passedodd"><td><a href="#m6">LoginToCMP</a></td><td rowspan="1">1595343588255</td><td rowspan="1">7714</td></tr><tr class="passedodd"><td><a href="#m7">Servers</a></td><td rowspan="1">1595343595994</td><td rowspan="1">3435</td></tr><tr class="passedodd"><td><a href="#m8">Services</a></td><td rowspan="1">1595343599441</td><td rowspan="1">4126</td></tr><tr class="passedeven"><td rowspan="5">test_suite.NewTest</td><td><a href="#m9">LoginToCMP</a></td><td rowspan="1">1595343636519</td><td rowspan="1">10744</td></tr><tr class="passedeven"><td><a href="#m10">Servers</a></td><td rowspan="1">1595343647263</td><td rowspan="1">4242</td></tr><tr class="passedeven"><td><a href="#m11">Services</a></td><td rowspan="1">1595343651509</td><td rowspan="1">4132</td></tr><tr class="passedeven"><td><a href="#m12">a_LoginToCMP_invalid_UserID</a></td><td rowspan="1">1595343627302</td><td rowspan="1">3264</td></tr><tr class="passedeven"><td><a href="#m13">b_LoginToCMP_invalid_Password</a></td><td rowspan="1">1595343630571</td><td rowspan="1">5945</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">test_suite.LoginAsDeveOpsAdmin#Groups</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test_suite.LoginAsDeveOpsAdmin#LoginToCMP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test_suite.LoginAsDeveOpsAdmin#Servers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test_suite.LoginAsDeveOpsAdmin#Services</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">test_suite.LoginAsDeveOpsAdmin#Services</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Services&quot;}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-FE62LF4&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:8545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5d64c4f1e34e0657079aea9493c8c48d
+*** Element info: {Using=link text, value=Services}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at test_suite.LoginAsDeveOpsAdmin.Services(LoginAsDeveOpsAdmin.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test_suite.NewTest#Groups</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#id_name&quot;}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-FE62LF4&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:8609}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 443b7ab10d7d2fdedc1f0d7338a0c12c
+*** Element info: {Using=id, value=id_name}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at test_suite.NewTest.Groups(NewTest.java:116)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test_suite.LoginAsDeveOpsAdmin#Groups</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test_suite.LoginAsDeveOpsAdmin#LoginToCMP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test_suite.LoginAsDeveOpsAdmin#Servers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test_suite.LoginAsDeveloper#Groups</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test_suite.LoginAsDeveloper#LoginToCMP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test_suite.LoginAsDeveloper#Servers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test_suite.LoginAsDeveloper#Services</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test_suite.NewTest#LoginToCMP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">test_suite.NewTest#Servers</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">test_suite.NewTest#Services</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">test_suite.NewTest#a_LoginToCMP_invalid_UserID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">test_suite.NewTest#b_LoginToCMP_invalid_Password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

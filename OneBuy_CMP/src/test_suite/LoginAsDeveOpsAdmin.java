@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -71,6 +72,20 @@ public class LoginAsDeveOpsAdmin
   {
 	  Thread.sleep(1000);
 	  driver.findElement(By.linkText("Groups")).click();
+  }
+  
+  @AfterTest
+  public void Logout() throws Exception
+  {
+	  Actions actions = new Actions(driver);
+	  WebElement menu = driver.findElement(By.xpath("//i[@class='fas fa-user']"));
+	  actions.moveToElement(menu).perform();
+	  Thread.sleep(1000);
+	  WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
+	  actions.moveToElement(submenu);
+	  actions.click().build().perform();
+	  Thread.sleep(1000);
+	  driver.quit();
   }
   
 }

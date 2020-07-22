@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -26,7 +27,7 @@ public class NewTest {
 		Thread.sleep(2000);
 		
   }
-  @Test(enabled=false) //(priority=1)
+  @Test(priority=1)
   public void a_LoginToCMP_invalid_UserID() {
 	  
 	  
@@ -40,7 +41,7 @@ public class NewTest {
 		  }
 	}
   
-  @Test(enabled=false) //(priority=2)
+  @Test(priority=2)
   public void b_LoginToCMP_invalid_Password() throws Exception {
 	  
 	    driver.findElement(By.id("id_username")).clear(); 
@@ -66,7 +67,7 @@ public class NewTest {
 		Thread.sleep(2000);
     }
   
-  @Test(priority=4)  //(enabled=false)
+  @Test(enabled=false)
    public void OrderBlueprint() throws Exception
    {
 	  driver.findElement(By.linkText("Catalog")).click();
@@ -81,7 +82,7 @@ public class NewTest {
 	  group.selectByIndex(0);
 	  
    }
-  @Test(enabled=false) //(priority=5)
+  @Test(priority=5)
   public void Servers() throws Exception
   {
 	  Actions actions = new Actions(driver);
@@ -94,7 +95,7 @@ public class NewTest {
 	  
   }
   
-  @Test(enabled=false) //(priority=6)
+  @Test(priority=6)
   public void Services() throws Exception
   {
 	  Actions actions = new Actions(driver);
@@ -106,7 +107,7 @@ public class NewTest {
 	  actions.click().build().perform();
   }
   
-  @Test(enabled=false) //(priority=7) //
+  @Test(priority=7) //
   public void Groups() throws Exception
   {
 	  Thread.sleep(1000);
@@ -118,5 +119,18 @@ public class NewTest {
 	  GroupType.selectByVisibleText("Environment");
 	  driver.findElement(By.cssSelector(".btn-primary")).click(); 
  }
+  @AfterTest
+   public void Logout() throws Exception
+   {
+	  Actions actions = new Actions(driver);
+	  WebElement menu = driver.findElement(By.xpath("//i[@class='fas fa-user']"));
+	  actions.moveToElement(menu).perform();
+	  Thread.sleep(1000);
+	  WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
+	  actions.moveToElement(submenu);
+	  actions.click().build().perform();
+	  Thread.sleep(1000);
+	  driver.quit();
+   }
 }
 

@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,7 @@ public class LoginAsDeveloper
 	  Thread.sleep(2000);
 	  }
 	 
-	 @Test 
+	 @Test(priority=1) 
 	 public void LoginToCMP() throws Exception
 	 {
 	 	driver.findElement(By.id("id_username")).clear(); 
@@ -40,7 +41,7 @@ public class LoginAsDeveloper
 		}
 		
 	 }
-	 @Test(priority=5)
+	 @Test(priority=2)
 	  public void Servers() throws Exception
 	  {
 		  Actions actions = new Actions(driver);
@@ -53,7 +54,7 @@ public class LoginAsDeveloper
 		  
 	  }
 	  
-	  @Test(priority=6)
+	  @Test(priority=3)
 	  public void Services() throws Exception
 	  {
 		  Actions actions = new Actions(driver);
@@ -65,10 +66,24 @@ public class LoginAsDeveloper
 		  actions.click().build().perform();
 	  }
 	  
-	  @Test(priority=7)
+	  @Test(priority=4)
 	  public void Groups() throws Exception
 	  {
 		  Thread.sleep(1000);
 		  driver.findElement(By.linkText("Groups")).click();
 	  }
+	  
+	  @AfterTest
+	   public void Logout() throws Exception
+	   {
+		  Actions actions = new Actions(driver);
+		  WebElement menu = driver.findElement(By.xpath("//i[@class='fas fa-user']"));
+		  actions.moveToElement(menu).perform();
+		  Thread.sleep(1000);
+		  WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
+		  actions.moveToElement(submenu);
+		  actions.click().build().perform();
+		  Thread.sleep(1000);
+		  driver.quit();
+	   }
 }
