@@ -45,26 +45,37 @@ public class LoginAsDeveOpsAdmin
 	@Test(priority=2)
      public void Servers() throws Exception
       {
-	  Actions actions = new Actions(driver);
-	  WebElement menu = driver.findElement(By.linkText("Resources"));
-	  actions.moveToElement(menu).perform();
+		/*
+		 * Actions actions = new Actions(driver); WebElement menu =
+		 * driver.findElement(By.linkText("Resources"));
+		 * actions.moveToElement(menu).perform(); Thread.sleep(2000); WebElement submenu
+		 * = driver.findElement(By.linkText("Servers")); actions.moveToElement(submenu);
+		 * actions.click().build().perform();
+		 */
+	  
+	  driver.findElement(By.linkText("Resources"));
 	  Thread.sleep(2000);
-	  WebElement submenu = driver.findElement(By.linkText("Servers"));
-	  actions.moveToElement(submenu);
-	  actions.click().build().perform();
+	  driver.findElement(By.linkText("Servers"));
 	  
   }
   
   @Test(priority=3)
   public void Services() throws Exception
   {
-	  Actions actions = new Actions(driver);
-	  WebElement menu = driver.findElement(By.linkText("Resources"));
-	  actions.moveToElement(menu).perform();
-	  Thread.sleep(2000);
-	  WebElement submenu = driver.findElement(By.linkText("Services"));
-	  actions.moveToElement(submenu);
-	  actions.click().build().perform();
+		
+		/*
+		 * Actions actions = new Actions(driver); WebElement menu =
+		 * driver.findElement(By.linkText("Resources"));
+		 * actions.moveToElement(menu).perform(); Thread.sleep(2000); WebElement submenu
+		 * = driver.findElement(By.linkText("Services"));
+		 * actions.moveToElement(submenu); actions.click().build().perform();
+		 */
+		 
+	  
+		
+		  driver.findElement(By.linkText("Resources")).click(); 
+		  Thread.sleep(1000);
+		  driver.findElement(By.linkText("Services")).click();	  
   }
   
   @Test(priority=4)

@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test_suite.LoginAsDeveOpsAdmin">
+      <class name="test_suite.NewTest">
         <methods>
-          <include name="Services"/>
-          <include name="LoginToCMP"/>
-          <include name="Groups"/>
-          <include name="Servers"/>
+          <include name="Logout"/>
+          <include name="OrderBlueprint"/>
           <include name="NavigateToCMP"/>
         </methods>
-      </class> <!-- test_suite.LoginAsDeveOpsAdmin -->
+      </class> <!-- test_suite.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
